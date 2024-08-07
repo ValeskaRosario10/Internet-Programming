@@ -15,6 +15,7 @@
         let pe=document.getElementById("PE");
 
 
+
         let isValid=true
         fe.textContent ="";
         le.textContent ="";
@@ -28,7 +29,6 @@
             isValid = false;
         }
 
-
         if(ln==""){
             le.textContent="Please enter first name";
             isValid = false;
@@ -36,12 +36,8 @@
         if(pw.length < 8 ){
             pe.textContent="Enter the password in 8 characters ";
             isValid = false;
-
-
         }
         return isValid
-
-
     }
    </script>
 
