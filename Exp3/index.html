@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exp 3 Form </title>
+    <link rel="stylesheet" href="./style.css">
     
    <script type="text/javascript">
     function Validate(){
@@ -13,22 +14,14 @@
         let fe=document.getElementById("FE");
         let le=document.getElementById("LE");
         let pe=document.getElementById("PE");
-
-
-
         let isValid=true
         fe.textContent ="";
         le.textContent ="";
         pe.textContent ="";
-
-
-
-
         if(fn==""){
             fe.textContent="Please enter first name";
             isValid = false;
         }
-
         if(ln==""){
             le.textContent="Please enter first name";
             isValid = false;
@@ -44,8 +37,10 @@
   </head>
   <body>
     <center>
-        <div style="background-color: rgb(72, 151, 199);">
-          <img src="./logo.png" alt="logo" width="50px " height="50px" style="padding-top: 10px;">
+        <div class="header"  style="background-color: rgb(72, 151, 199);">
+         <div class="logo">
+          <img src="./logo.png" alt="logo" class="logo"  width="50px " height="50px"  style="padding-top: 10px;">
+        </div>
             <h2>St Francis Institute of Technology </h2>
             <p>Mount Poinser, Borivali (W), Mumbai - 400 101</p>
             <p>
@@ -115,34 +110,26 @@
                <input type="radio" id="ELE " name="ELEL " value="ELEL"style="margin-bottom: 10px; " >ELEL 
                <input type="radio" id="MECH " name="MECH " value="MECH" style="margin-bottom: 10px; ">MECH   <br>
               </div>
-
                <label for="ScoreC"><b>Upload CET Score Card: </b></label>
                <input type="file" id="ScoreC" name="ScoreC" style="margin-bottom: 10px; ">
                <br>
-
                <label for="username"><b>Choose Username : </b></label>
                <input type="text" id ="username" placeholder="Text"style="margin-bottom: 10px; ">
                <br>
-
                <label for="password"><b>Enter Password : </b></label>
                <input type="password" id ="PW" placeholder="Enter Strong password" style="margin-bottom: 10px; ">
                <span id="PE" style="color: red;"></span>
                <br>
-
                <label for="password1"><b>Retype Password : </b></label>
                <input type="password" id="password " placeholder="Rewite the password"style="margin-bottom: 10px; ">
                <br>
-
                <input type="submit" value=" submit" style="margin-bottom: 10px; font-weight: bold; ">
                <br>
-     
             </form>
     </div>
-
-   <div>
-    <iframe src="./frame1.html" height="200" width="1500" title="Vision&Mission"></iframe>
-    <iframe src="./fram2.html" height="750" width="1500" title="buildingImg"></iframe>
-
+   <div class="frame">
+    <iframe  src="./frame1.html" height="300" width="1450" style="border-radius: 4%;" title="Vision&Mission"></iframe>
+    <iframe src="./frame2.html" height="750" width="1500" style="border-radius: 4%;" title="buildingImg"></iframe>
    </div>
    
 </body>
