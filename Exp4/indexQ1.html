@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment 4</title>
+
+
+    <!-- 1. Write a Menu driven program in JavaScript to carry out the following to demonstrate the  use of control structures and arrow functions
+1) To take username as input and display Hello Username!
+2) To calculate area of a triangle.
+3) To display whether number given by user is even or odd.
+4) To find greatest number from array of seven numbers.
+5) Find Factorial of a number given by user.  -->
+
+
+    <script type="text/javascript">
+
+        while(ch!=0){
+      var ch = Number(
+        window.prompt(`Enter Your Choice
+         1) To take username as input and display Hello Username!
+        2) To calculate area of a triangle.
+        3) To display whether number given by user is even or odd.
+        4) To find greatest number from array of seven numbers.
+        5) Find Factorial of a number given by user.`)
+      );
+
+      
+        switch (ch) {
+          case 1:
+            var name = window.prompt("Enter Your name ");
+            window.alert("Hello ", name);
+            break;
+          case 2:
+            var b = window.prompt("Enter the length  ");
+            var h = window.prompt("Enter the breath  ");
+            var area = 0.5 * b * h;
+            window.alert("The area of the triangel is " + area);
+            break;
+          case 3:
+            var a = window.prompt("Enter Your number ");
+            if (a % 2 == 0) {
+              window.alert("The number is even");
+            } else {
+              window.alert("The number is odd");
+            }
+            break;
+          case 4:
+            let n = 7;
+            let c = new Array(n);
+            for (let i = 0; i < n; i++) {
+              c[i] = Number(window.prompt("Enter number at position: ", i));
+            }
+            let max = c[0];
+            for (i = 1; i < n; i++) {
+              if (max < c[i]) {
+                max = c[i];
+              }
+            }
+            window.alert("Maximum Number is : " + max);
+            break;
+
+          // let n = 7;
+          // let a = new Array(n);
+          // for (let i = 0; i < n; i++) {
+          //   a[i] = Number(window.prompt("Enter a number:"+i));}
+          //   let max=a[0];
+          //   for(i=1;i<n;i++){
+          //     if (max < a [i]) {
+          //     max = a[i];
+          //   }
+          // }
+          // window.alert(max);
+          // con
+
+          // break;
+
+
+          case 5:
+            let number = Number(window.prompt("Enter a number"));
+            let fact = 1;
+            for (let j = 1; j <= number; j++) {
+              fact = fact * j;
+            }
+            window.alert("Factorial is : " + fact);
+        }}
+     
+    </script>
+  </head>
+
+
+  <body>
+    <h1></h1>
+  </body>
+</html>
+
+
+
