@@ -7,12 +7,10 @@
 
     <script >
         var ch=Number(window.prompt(`Enter your choice 
-        1) Create a class ‘accholder’ with following attribute as ‘accnum’, ‘name’, ‘age’, and
-          ‘balance’ and print details of two employees using display function.
-        2)Create a parent class “Calculator” with attributes length, width.
-         Create one derived  class named “rectArea” from “calculator” with attribute radius 
-         and method to display  area of a rectangle. Use super keyword to call parent’s constructor. Then create
-        derived class “circleArea” from “rectArea” and include method to calculate and  display area of a circle.
+1) Create a class ‘accholder’ with following attribute as ‘accnum’, ‘name’, ‘age’, and balance’ and print details of two employees using display function.
+2)Create a parent class “Calculator” with attributes length, width.
+Create one derived  class named “rectArea” from “calculator” with attribute radius and method to display  area of a rectangle. Use super keyword to call parent’s constructor. Then create
+derived class “circleArea” from “rectArea” and include method to calculate and  display area of a circle.
 
 
 `))
@@ -23,29 +21,59 @@ switch(ch){
     case 1 : //1) Create a class ‘accholder’ with following attribute as ‘accnum’, ‘name’, ‘age’, and
                 //‘balance’ and print details of two employees using display function.
                 class Accholder{
-                    constructor (accnum,name, age ,bal){
+                    constructor (an,nm, age ,b){
                         this.accnum=an;
                         this.name=nm;
                         this.age=age;
                         this.bal=b;
                     }
                     display() {
-                        window.alert(accnum,name,age,bal);
+                        let accnum = this.accnum;
+                        let name = this.name;
+                        let age = this.age;
+                        let bal = this.bal;
                         console.log(accnum,name,age,bal);
 
+                        window.alert("The details of the account holder is" +accnum+ " " +name +" " +age+ ""+bal);
                     }
 
                 }
-                var obj=new Accholder(10235,"Valeska", 19 , 5000000);
+                var emp1=new Accholder(10235,"Valeska", 19 , 5000000);
+                var emp2=new Accholder(15235,"Leandra ", 22 , 9000000);
+                emp1.display();
+                emp2.display();
                 break;
-    // case 2 : //2)Create a parent class “Calculator” with attributes length, width.
-    //          //  Create one derived  class named “rectArea” from “calculator” with attribute radius 
-    //          //  and method to display  area of a rectangle. Use super keyword to call parent’s constructor. Then create
-    //          // derived class “circleArea” from “rectArea” and include method to calculate and  display area of a circle.
+    case 2 : //2)Create a parent class “Calculator” with attributes length, width.
+             //  Create one derived  class named “rectArea” from “calculator” with attribute radius 
+             //  and method to display  area of a rectangle. Use super keyword to call parent’s constructor. Then create
+             // derived class “circleArea” from “rectArea” and include method to calculate and  display area of a circle.
 
-    //          class Calculator (length,breath) {
-
-    //          }
+             class Calculator{
+                constructor (l,b) {
+                this.length=l;
+                this.breath=b;
+            } }
+            class rectArea extends Calculator{
+                constructor(l,b,r){
+                    super(l,b);
+                    this.r=r;
+                }
+                displayRect(){
+                    var r=this.length*this.breath;
+                    window.alert("The area of the rectangle is "+r);
+                }
+            }
+            class circleArea extends rectArea{
+                displayCir(){
+                    var c = 3.14 * this.r *this.r ;
+                    window.alert("The area of the circle is " +c);
+                    
+                }
+            }
+            var obj1= new circleArea (12,9,6);
+            obj1.displayRect();
+            obj1.displayCir();
+        
 }
     </script>
 </head>
