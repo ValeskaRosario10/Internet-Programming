@@ -2,21 +2,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
+    <title>Experiment 4 Question 2 </title>
     <script >
         var ch=Number(window.prompt(`Enter your choice 
-1) Create a class ‘accholder’ with following attribute as ‘accnum’, ‘name’, ‘age’, and balance’ and print details of two employees using display function.
+1) Create a class ‘accholder’ with following attribute as ‘accnum’,
+ ‘name’, ‘age’, and balance’ and print details of two employees
+  using display function.
 2)Create a parent class “Calculator” with attributes length, width.
-Create one derived  class named “rectArea” from “calculator” with attribute radius and method to display  area of a rectangle. Use super keyword to call parent’s constructor. Then create
-derived class “circleArea” from “rectArea” and include method to calculate and  display area of a circle.
-
-
+Create one derived  class named “rectArea” from “calculator” with 
+attribute radius and method to display  area of a rectangle.
+ Use super keyword to call parent’s constructor. Then create 
+ derived  class “circleArea” from “rectArea” and include method 
+to calculate and  display area of a circle.
 `))
-
-
-
 switch(ch){
     case 1 : //1) Create a class ‘accholder’ with following attribute as ‘accnum’, ‘name’, ‘age’, and
                 //‘balance’ and print details of two employees using display function.
@@ -32,12 +30,8 @@ switch(ch){
                         let name = this.name;
                         let age = this.age;
                         let bal = this.bal;
-                        console.log(accnum,name,age,bal);
-
                         window.alert("The details of the account holder is" +accnum+ " " +name +" " +age+ ""+bal);
-                    }
-
-                }
+                    }  }
                 var emp1=new Accholder(10235,"Valeska", 19 , 5000000);
                 var emp2=new Accholder(15235,"Leandra ", 22 , 9000000);
                 emp1.display();
@@ -47,8 +41,7 @@ switch(ch){
              //  Create one derived  class named “rectArea” from “calculator” with attribute radius 
              //  and method to display  area of a rectangle. Use super keyword to call parent’s constructor. Then create
              // derived class “circleArea” from “rectArea” and include method to calculate and  display area of a circle.
-
-             class Calculator{
+    class Calculator{
                 constructor (l,b) {
                 this.length=l;
                 this.breath=b;
@@ -66,18 +59,15 @@ switch(ch){
             class circleArea extends rectArea{
                 displayCir(){
                     var c = 3.14 * this.r *this.r ;
-                    window.alert("The area of the circle is " +c);
-                    
+                    window.alert("The area of the circle is " +c);   
                 }
             }
             var obj1= new circleArea (12,9,6);
             obj1.displayRect();
             obj1.displayCir();
-        
 }
     </script>
 </head>
 <body>
-   
 </body>
 </html>
