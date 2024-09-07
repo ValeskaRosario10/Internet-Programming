@@ -1,0 +1,57 @@
+body {
+    margin: 10;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 20px; */
+    font-family: Arial, sans-serif;
+  }
+.App {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid #7C00FE;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-color: #7C00FE;
+}
+
+
+
+.Details{
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;  
+    background-color: #FFAF00; 
+}
+.head{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.PD{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    background-color: #F9E400;
+
+}
+
+.AD{
+    margin: 10px;
+    padding: 10px;
+    background-color: #F9E400;
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 100%;
+}
