@@ -4,7 +4,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 20px; */
     font-family: Arial, sans-serif;
   }
 .App {
@@ -18,9 +17,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   background-color: #7C00FE;
 }
-
-
-
 .Details{
     margin: 10px;
     padding: 10px;
@@ -33,7 +29,6 @@ body {
     justify-content: center;
     justify-items: center;
 }
-
 .PD{
     margin: 10px;
     padding: 10px;
@@ -42,9 +37,7 @@ body {
     align-items: flex-start;
     
     background-color: #F9E400;
-
 }
-
 .AD{
     margin: 10px;
     padding: 10px;
