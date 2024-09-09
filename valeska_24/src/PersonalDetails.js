@@ -39,7 +39,7 @@ class PersonalDetails extends React.Component{
                             <td> 2</td>
                             <td> HSC </td>
                             <td> St Andrews College of Arts Science and Commerce </td>
-                            <td> 89.4 %</td>
+                            <td> 69.67 %</td>
                         </tr>
 
                         <tr>
