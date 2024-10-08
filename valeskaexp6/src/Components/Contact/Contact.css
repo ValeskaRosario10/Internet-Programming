@@ -1,0 +1,25 @@
+
+.contact-container {
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+    justify-content: center;  
+    height: 70vh; 
+    background-color: #f0f0f0;
+    padding: 20px;   
+}
+
+h1 {
+    margin-bottom: 20px;  
+    color: #333; 
+    text-align: center;  
+}
+h3 {
+    margin: 10px 0;  
+    color: #333; 
+}
+
+.contact-info {
+    color: #007BFF;  
+    font-weight: bold;  
+}

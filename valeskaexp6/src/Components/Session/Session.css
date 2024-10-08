@@ -1,0 +1,11 @@
+.session-container {
+    display: flex;
+    flex-direction: column;  
+    height: 75vh;  
+    background-color: #f0f0f0;  
+    padding: 20px; 
+}
+p{
+    justify-content: left;
+    align-items: center;
+}

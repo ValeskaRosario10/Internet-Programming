@@ -1,16 +1,14 @@
-
-import './App.css';
-import Navbar from './Navbar';
-
-import {BrowserRouter , Link , Route ,Routes } from 'react-router-dom';
-
+import "./App.css";
+import Navbar from "./Navbar";
 
 function App() {
-  return (<header className="App-header">
-        <h1> A Single Page Application </h1>
-       <Navbar/>
-      </header>
-  
+  return (
+    <header className="App-header">
+      <h1 style={{ color: "#8a8989" }} className="header">
+        Internet Programming{" "}
+      </h1>
+      <Navbar />
+    </header>
   );
 }
 
